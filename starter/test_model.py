@@ -16,19 +16,34 @@ def data():
     df = pd.read_csv("data/census_clean_data.csv")
 #     df = pd.read_csv(os.path.join(os.getcwd(), "/data/census_clean_data.csv"))
    
+#     # load model
+#     model = os.path.join(os.getcwd(), "../model/model.pkl")
+#     with open(model, "rb") as f:
+#         model = pickle.load(f)
+
+#     # load encoder
+#     encoder = os.path.join(os.getcwd(), "../model/encoder.pkl")
+#     with open(encoder, "rb") as f:
+#         encoder = pickle.load(f)
+
+#     # load lb
+#     lb = os.path.join(os.getcwd(), "../model/lb.pkl")
+#     with open(lb, "rb") as f:
+#         lb = pickle.load(f)
+        
     # load model
-    model = os.path.join(os.getcwd(), "../model/model.pkl")
-    with open(model, "rb") as f:
+    model_path = "model/model.pkl"
+    with open(model_path, "rb") as f:
         model = pickle.load(f)
 
     # load encoder
-    encoder = os.path.join(os.getcwd(), "../model/encoder.pkl")
-    with open(encoder, "rb") as f:
+    encoder_path = "model/encoder.pkl"
+    with open(encoder_path, "rb") as f:
         encoder = pickle.load(f)
         
     # load lb
-    lb = os.path.join(os.getcwd(), "../model/lb.pkl")
-    with open(lb, "rb") as f:
+    lb_path = "model/lb.pkl"
+    with open(lb_path, "rb") as f:
         lb = pickle.load(f)
 
     return df, model, encoder, lb
