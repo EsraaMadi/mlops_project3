@@ -1,4 +1,4 @@
 [core]
     remote = store
 ['remote "store"']
-    url = s3://mlops-proj/POfXw7Zp1nJyJUJaRk388CPatkWZ7WlKjJguXCD9
+    url = s3://mlops-proj/
