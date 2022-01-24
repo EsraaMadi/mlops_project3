@@ -14,7 +14,7 @@ from .ml.data import process_data
 def data():
     # load data
 #     df = pd.read_csv("../data/census_clean_data.csv")
-    df = pd.read_csv(os.path.join(os.getcwd(), "../data/census_clean_data.csv"))
+    df = pd.read_csv(os.path.join(os.getcwd(), "/data/census_clean_data.csv"))
    
     # load model
     model = os.path.join(os.getcwd(), "../model/model.pkl")
