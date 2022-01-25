@@ -11,7 +11,7 @@ def test_welcome():
     assert r.json() == {"Home": "Welcome I am prediction app"}
 
 
-def test_predict__salary_positive():
+def test_predict_salary_positive():
     row = {'age': 50, 'workclass': 'Self-emp-not-inc',
            'fnlgt': 83311, 'education': 'Bachelors',
            'education-num': 13, 'marital-status': 'Married-civ-spouse',

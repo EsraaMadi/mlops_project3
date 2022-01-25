@@ -18,7 +18,7 @@ row = {'age': 50, 'workclass': 'Self-emp-not-inc',
            'capital-gain': 0, 'capital-loss': 0,
            'hours-per-week': 13, 'native-country': 'United-States'
           }
-
+print(row)
 response = requests.post('https://live-pred-app.herokuapp.com/predict', data=json.dumps(row))
 
 print('---', 'response code: ', response.status_code)
