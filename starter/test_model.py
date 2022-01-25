@@ -31,7 +31,7 @@ def data():
 #         lb = pickle.load(f)
 
     # load data
-    df = pd.read_csv("data/census_clean_data.csv")
+    df = pd.read_csv("data/census_clean_data.csv", index=0)
     
     # load model
     model_path = "model/model.pkl"
