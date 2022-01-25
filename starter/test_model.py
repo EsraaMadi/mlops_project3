@@ -12,9 +12,8 @@ from .ml.data import process_data
 
 @pytest.fixture
 def data():
-    # load data
-    df = pd.read_csv("data/census_clean_data.csv")
-#     df = pd.read_csv(os.path.join(os.getcwd(), "/data/census_clean_data.csv"))
+#     # load data 
+#     df = pd.read_csv("../data/census_clean_data.csv")
    
 #     # load model
 #     model = os.path.join(os.getcwd(), "../model/model.pkl")
@@ -30,7 +29,10 @@ def data():
 #     lb = os.path.join(os.getcwd(), "../model/lb.pkl")
 #     with open(lb, "rb") as f:
 #         lb = pickle.load(f)
-        
+
+    # load data
+    df = pd.read_csv("data/census_clean_data.csv")
+    
     # load model
     model_path = "model/model.pkl"
     with open(model_path, "rb") as f:
