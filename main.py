@@ -30,6 +30,26 @@ class DataRow(BaseModel):
     sex           : str
     native_country: str = Field(alias='native-country')
         
+    class Config:
+        schema_extra = {
+            "example": {
+                "age": 50,
+                "workclass": 'Self-emp-not-inc',
+                "fnlgt": 83311,
+                "education": 'Bachelors',
+                "education-num": 13,
+                "marital-status": 'Married-civ-spouse',
+                "occupation": 'Exec-managerial',
+                "relationship": 'Husband',
+                "race": 'White',
+                "sex": 'Male',
+                "capital-gain": 0,
+                "capital-loss": 0,
+                "hours-per-week": 13,
+                "native-country": 'United-States'
+            }
+        }
+        
 
 # load model and encoder
 root_path = os.path.dirname(os.path.abspath(__file__))
